@@ -8,6 +8,16 @@ Homebrew setup
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+### macOS High Sierra's permissions workaround
+
+As found in this [Stack Overflow's post](https://stackoverflow.com/questions/46459152/cant-chown-usr-local-for-homebrew-in-osx-10-13-high-sierra)
+
+```sh
+sudo mkdir /usr/local/include
+sudo mkdir /usr/local/Frameworks
+sudo chown -R $(whoami) $(brew --prefix)/*
+```
+
 ## Git install
 Install git throught Homebrew
 
