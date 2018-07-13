@@ -32,6 +32,17 @@ git config --global core.excludesfile ~/.gitignore_global
 ```
 The Octocat has a [Gist](https://gist.github.com/octocat/9257657) containing some good rules to add to this file.
 
+## Ansible setup
+
+```sh
+sudo easy_install pip
+sudo pip install ansible
+```
+Then create system wide Ansible directory with ```sudo mkdir /etc/ansible``` and copy the default Ansible configuration file
+```bash
+sudo curl -L https://raw.githubusercontent.com/ansible/ansible/devel/examples/ansible.cfg -o /etc/ansible/ansible.cfg
+```
+
 # Organize things
 
 * All code goes in *~/code*
