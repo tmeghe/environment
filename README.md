@@ -32,6 +32,44 @@ git config --global core.excludesfile ~/.gitignore_global
 ```
 The Octocat has a [Gist](https://gist.github.com/octocat/9257657) containing some good rules to add to this file.
 
+## zsh Install
+
+    brew install zsh
+    sudo nano /etc/shells
+
+The resulting `/etc/shells` file should look like this:
+
+    /bin/bash
+    /bin/csh
+    /bin/ksh
+    /bin/sh
+    /bin/tcsh
+    /bin/zsh
+    /usr/local/bin/zsh
+
+The `/usr/local/bin/zsh` location is the symlink Homebrew creates when installing zsh.
+
+To actually change the shell assigned to the user account run
+
+    chsh -s /usr/local/bin/zsh
+
+The install oh-my-zsh
+
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+## install Powerline fonts
+
+On other environments, you can copy and paste these commands to your terminal. Comments are fine too.
+::
+    # clone
+    git clone https://github.com/powerline/fonts.git --depth=1
+    # install
+    cd fonts
+    ./install.sh
+    # clean-up a bit
+    cd ..
+    rm -rf fonts
+
 ## Ansible setup
 
 ```sh
