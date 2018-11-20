@@ -81,10 +81,17 @@ Then create system wide Ansible directory with ```sudo mkdir /etc/ansible``` and
 sudo curl -L https://raw.githubusercontent.com/ansible/ansible/devel/examples/ansible.cfg -o /etc/ansible/ansible.cfg
 ```
 
+## Websocket management
+WSCAT
+
 # Organize things
 
 * All code goes in *~/code*
 * Inside *~/code* folder, projects follows **topic**, **platform** and **seriousness** paradigms
+
+## Logs Managmenet
+
+LNAV
 
 License
 ----
