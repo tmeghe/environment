@@ -60,7 +60,7 @@ The install oh-my-zsh
 ## install Powerline fonts
 
 On other environments, you can copy and paste these commands to your terminal. Comments are fine too.
-::
+```
     # clone
     git clone https://github.com/powerline/fonts.git --depth=1
     # install
@@ -69,6 +69,9 @@ On other environments, you can copy and paste these commands to your terminal. C
     # clean-up a bit
     cd ..
     rm -rf fonts
+  ```
+  
+  Then install https://github.com/ryanoasis/nerd-fonts#option-3-install-script
 
 ## Ansible setup
 
